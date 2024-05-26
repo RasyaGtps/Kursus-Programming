@@ -1,0 +1,331 @@
+:root {
+  font-size: 10px;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+#header {
+  height: max-content;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 0;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 800px) {
+  #header {
+      text-align: center;
+      height: auto;
+  }
+}
+.header-content-div {
+  max-width: 95rem;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .header-content-div {
+      max-width: 75rem;
+  }
+}
+#header-img {
+  height: 5rem;
+  width: auto;
+}
+@media (max-width: 800px) {
+  #header-img {
+      height: 4rem;
+  }
+}
+nav {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
+@media (max-width: 800px) {
+  nav {
+      position: static;
+      float: none;
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.5rem;
+  padding: 0 0.6rem;
+  transition: border-bottom 0.2s;
+}
+
+.nav-link #log-out {
+  text-decoration: none;
+  color: red;
+  margin: 0 0.5rem;
+  padding: 0 0.6rem;
+  transition: border-bottom 0.2s;
+}
+@media (max-width: 475px) {
+  .nav-link {
+      margin: 0 0.2rem;
+      padding: 0 0.2rem;
+      font-size: 1.2rem;
+  }
+}
+.nav-link:hover {
+  color: #e23d3d;
+  border-bottom: 2px solid #e23d3d;
+}
+.nav-link:active {
+  color: #f84848;
+}
+
+#log-out {
+  background-color: #ff4d4d; /* Warna latar belakang untuk tombol Log out */
+  color: white; /* Warna teks */
+  padding: 0.5rem 1rem; /* Padding untuk tombol */
+  border-radius: 5px; /* Sudut melengkung */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#log-out:hover {
+  background-color: #e60000; /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+#log-out:active {
+  background-color: #cc0000; /* Warna latar belakang saat tombol ditekan */
+  color: white; /* Warna teks saat tombol ditekan */
+}
+.logo-and-username {
+  display: flex;
+  align-items: center;
+}
+#username {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  margin-left: 1rem;
+  font-family: "quicksand", sans-serif;
+  text-align: start;
+}
+
+.flexible {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.home-sec {
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+  min-height: 60rem;
+  height: auto;
+  margin: 0 auto 5rem auto;
+  max-width: 95rem;
+  color: #333;
+}
+@media (max-width: 800px) {
+  .home-sec {
+      flex-flow: column wrap;
+      max-width: 100%;
+  }
+}
+.eye-grabber {
+  flex: 1;
+  padding: 0 2rem;
+  margin-right: 2rem;
+  color: white;
+}
+@media (max-width: 800px) {
+  .eye-grabber {
+      max-width: max-content;
+      padding-bottom: 8rem;
+  }
+}
+.eye-grabber h1 {
+  font-size: 5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #29C5F6;
+}
+.eye-grabber h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: white;
+}
+.eye-grabber-img {
+  flex: 1;
+}
+@media (max-width: 800px) {
+  .eye-grabber-img {
+      width: 100%;
+  }
+}
+.eye-grabber-img img {
+  max-width: 100%;
+}
+.section-heading {
+  font-size: 2.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.sec-content-div {
+  font-size: 2rem;
+  text-align: start;
+  padding: 0 2rem 5rem 2rem;
+  width: auto;
+  justify-content: space-around;
+  max-width: 95rem;
+  margin: 0 auto;
+  color: white;
+}
+.sec-padding {
+  padding: 8rem 0 10rem 0;
+}
+#about {
+  background-color: #fafafa;
+}
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+.tile {
+  background-color: #fafafa;
+  height: 57rem;
+  width: 30rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+@media (max-width: 680px) {
+  .tile {
+      width: auto;
+      max-width: 100%;
+      min-width: 20rem;
+      margin: 1.5rem auto;
+      height: auto;
+  }
+}
+.tile img {
+  width: 150%;
+  max-width: 29rem;
+  border-radius: 0.5rem;
+}
+.tile h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: #e23d3d;
+  margin: 0;
+}
+
+.tile h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: black;
+  margin: 0;
+}
+.tile p {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+}
+.bars {
+  height: max-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 2rem;
+  width: 100%;
+  color: white;
+}
+@media (max-width: 990px) {
+  .bars {
+      flex-flow: column wrap;
+  }
+  .icon-container {
+      margin: 0 2.5rem;
+      border-radius: 20px 10px 80px 10px;
+  }
+}
+.bars .icon-container {
+  max-width: 10rem;
+  flex: 1;
+}
+.icon-container img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+.bars .txt-container {
+  flex: 2;
+  padding: 3rem;
+}
+.txt-container h5 {
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.txt-container p {
+  font-size: 2.3rem;
+}
+footer {
+  font-size: 1.4rem;
+  background-color: #333;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: #fafafa;
+}
+footer a {
+  color: #e3e3e3;
+  text-decoration: none;
+}
+
+#active {
+  color: orangered;
+  font-size: 28px;
+  font-weight: bold;
+}
+

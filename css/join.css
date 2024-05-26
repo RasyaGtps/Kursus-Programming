@@ -1,0 +1,297 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+:root {
+  font-size: 10px;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+h1 {
+  margin: 0;
+}
+
+.page-content {
+	width: 100%;
+	margin:  0 auto;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); 
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-o-justify-content: center;
+	-ms-justify-content: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-o-align-items: center;
+	-ms-align-items: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+}
+
+input{
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+#choose-kursus{
+  outline: 0;
+  background: #f2f2f2;
+  width: 50%;
+  border: 0;
+  margin: 0 0 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+.formBtn {
+  outline: 0;
+  width: 140px;
+  height: 30px;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.2em;
+  border-radius: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+#header {
+  height: max-content;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 0;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 800px) {
+  #header {
+      text-align: center;
+      height: auto;
+  }
+}
+@media (max-width: 800px) {
+  #header {
+    text-align: center;
+    height: auto;
+  }
+}
+.header-content-div {
+  max-width: 95rem;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .header-content-div {
+      max-width: 75rem;
+  }
+}
+#header-img {
+  height: 5rem;
+  width: auto;
+}
+@media (max-width: 800px) {
+  #header-img {
+      height: 4rem;
+  }
+}
+nav {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+  margin-left: 40px;
+}
+@media (max-width: 800px) {
+  nav {
+      position: static;
+      float: none;
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.5rem;
+  padding: 0 0.6rem;
+  transition: border-bottom 0.2s;
+}
+@media (max-width: 475px) {
+  .nav-link {
+      margin: 0 0.2rem;
+      padding: 0 0.2rem;
+      font-size: 1.2rem;
+  }
+}
+.nav-link:hover {
+  color: #e23d3d;
+  border-bottom: 2px solid #e23d3d;
+}
+.nav-link:active {
+  color: #f84848;
+}
+
+#log-out {
+  background-color: #ff4d4d; /* Warna latar belakang untuk tombol Log out */
+  color: white; /* Warna teks */
+  padding: 0.5rem 1rem; /* Padding untuk tombol */
+  border-radius: 5px; /* Sudut melengkung */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#log-out:hover {
+  background-color: #e60000; /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+#log-out:active {
+  background-color: #cc0000; /* Warna latar belakang saat tombol ditekan */
+  color: white; /* Warna teks saat tombol ditekan */
+}
+.logo-and-username {
+  display: flex;
+  align-items: center;
+}
+#username {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  margin-left: 1rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+}
+#active {
+  color: orangered;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form-v6-content  {
+	background: #fff;
+	width: 968px;
+	border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 180px 0;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+}
+.form-v6-content .form-left {
+	margin-bottom: -6px;
+}
+.form-v6-content .form-left img {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.form-v6-content .form-detail {
+    padding: 30px 40px;
+	position: relative;
+	width: 100%;
+}
+.form-v6-content .form-detail h2 {
+	color: #333;
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+	padding: 6px 0 0;
+	margin-bottom: 47px;
+}
+.form-v6-content .form-row {
+    width: 100%;
+}
+.form-v6-content .form-detail .form-row-last {
+	text-align: center;
+}
+.form-v6-content .form-detail .input-text {
+	margin-bottom: 35px;
+}
+
+
+.form-v6-content .form-detail input {
+	width: 92%;
+    padding: 0px 15px 10px 15px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #e5e5e5;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+.form-v6-content .form-detail .form-row input:focus {
+	border-bottom: 2px solid #fe892a;
+}
+.form-v6-content .form-detail .register {
+	background: #fe892a;
+	border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	width: 160px;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+	border: none;
+	margin: 11px 0 50px 0px;
+	cursor: pointer;
+	font-family: 'QuickSand', sans-serif;
+	color: #fff; 
+	font-weight: 700;
+	font-size: 18px;
+}
+.form-v6-content .form-detail .register:hover {
+	background: #e37b27;
+}
+.form-v6-content .form-detail .form-row-last input {
+	padding: 13px;
+}

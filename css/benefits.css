@@ -1,0 +1,248 @@
+:root {
+  font-size: 10px;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+#header {
+  height: max-content;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 0;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 800px) {
+  #header {
+      text-align: center;
+      height: auto;
+  }
+}
+.header-content-div {
+  max-width: 95rem;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .header-content-div {
+      max-width: 75rem;
+  }
+}
+#header-img {
+  height: 5rem;
+  width: auto;
+}
+@media (max-width: 800px) {
+  #header-img {
+      height: 4rem;
+  }
+}
+nav {
+  position: relative;
+  top: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
+@media (max-width: 800px) {
+  nav {
+      position: static;
+      float: none;
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+  }
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.5rem;
+  padding: 0 0.6rem;
+  transition: border-bottom 0.2s;
+}
+@media (max-width: 475px) {
+  .nav-link {
+      margin: 0 0.2rem;
+      padding: 0 0.2rem;
+      font-size: 1.2rem;
+  }
+}
+.nav-link:hover {
+  color: #e23d3d;
+  border-bottom: 2px solid #e23d3d;
+}
+.nav-link:active {
+  color: #f84848;
+}
+#log-out {
+  background-color: #ff4d4d; /* Warna latar belakang untuk tombol Log out */
+  color: white; /* Warna teks */
+  padding: 0.5rem 1rem; /* Padding untuk tombol */
+  border-radius: 5px; /* Sudut melengkung */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#log-out:hover {
+  background-color: #e60000; /* Warna latar belakang saat hover */
+  color: white; /* Warna teks saat hover */
+}
+
+#log-out:active {
+  background-color: #cc0000; /* Warna latar belakang saat tombol ditekan */
+  color: white; /* Warna teks saat tombol ditekan */
+}
+  .flexible {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: black;
+  }
+  .home-sec {
+    font-family: "quicksand", sans-serif;
+    text-align: start;
+    min-height: 60rem;
+    height: auto;
+    margin: 0 auto 10rem auto;
+    color: black;
+    max-width: 95rem;
+    color: #333;
+  }
+  @media (max-width: 800px) {
+    .home-sec {
+      flex-flow: column wrap;
+      max-width: 100%;
+    }
+  }
+  .eye-grabber {
+    padding: 0 0rem;
+    color: black;
+  }
+  @media (max-width: 800px) {
+    .eye-grabber {
+      max-width: max-content;
+      padding-bottom: 100rem;
+      background-color: black;
+    }
+  }
+  .eye-grabber h1 {
+    font-size: 5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #29C5F6;
+    margin-left: 230px;
+    margin-bottom: 10px ;
+  }
+  .eye-grabber h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 230px;
+    margin-top: -22px;
+  }
+
+    .eye-grabber-img {
+  margin-right:50rem;
+  margin-top: -12rem;
+}
+
+@media (max-width: 800px) {
+  .eye-grabber-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+  .section-heading {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding: 10rem 0 5rem 0;
+    text-align: center;
+  }
+
+  .tile {
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: white;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: -20px;
+  }
+  @media (max-width: 680px) {
+    .tile {
+      width: auto;
+      max-width: 100%;
+      min-width: 20rem;
+      margin: 1.5rem auto;
+      height: 5px;
+    }
+  }
+  .tile img {
+    width: 100%;
+    max-width: 29rem;
+    border-radius: 0.5rem;
+  }
+  .tile h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    color: #e23d3d;
+    margin: 0;
+  }
+  .tile p {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    color: black;
+  }
+
+  .tile ul {
+    font-size: 1.6rem;
+  }
+  .tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+  }
+
+  #active {
+    color: orangered;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .logo-and-username {
+    display: flex;
+    align-items: center;
+  }
+  #username {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin-left: 1rem;
+    font-family: "Quicksand", sans-serif;
+    text-align: start;
+  }
